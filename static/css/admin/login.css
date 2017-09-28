@@ -1,0 +1,17 @@
+html,body{width: 100%; height: 100%;}
+
+body{background: rgba(0, 0, 0, 0) url("http://127.0.0.1:3001/imgs/banner.jpg")}
+
+.stage{height: 100%;}
+
+.stage .login-panel{width:540px; height: 400px;  position: absolute; top: 15%;  left: 35%; background: #e1e1e1; border-radius: 30px 0 30px 0;}
+
+.stage .login-panel h1{margin: 20px; color: #f45b4b; font-size: 27px; text-align: center;}
+
+.stage .login-panel .input-con input{margin: 0 0 10px 40px; padding: 0 0 0 20px; width: 80%; height: 50px; line-height: 50px; border: 1px solid #dedede; border-radius: 5px; background: #cacaca; font-size: 14px;}
+
+.stage .button-bar .btn-login{display: block; float: right; margin: 20px 60px 0 0; width: 100px; height: 50px; line-height: 50px; background: #f45b4b; color: #FFF; text-align: center; border-radius: 20px; cursor: pointer;}
+
+.stage .input-con .bottom{ margin: 27px 0 0 0; height: 100px; background: #f45b4b; color: #FFF; border-radius: 0 0 30px 0; }
+
+.stage .input-con .bottom span{display: block; margin: 40px 60px 0 0; float: right; cursor: pointer;}

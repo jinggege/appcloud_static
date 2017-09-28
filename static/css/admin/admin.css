@@ -1,0 +1,35 @@
+body{background: #f2f2f2; font-family: "微软雅黑","Microsoft Yahei","Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";}
+
+.M-top{width:100%; height: 60px; border-bottom: 1px solid #23262e; background: #393d49;}
+
+.M-stage .M-menu-left{float: left; width:200px; height:100%; background: #393d49;}
+
+.M-stage .M-content{float: right; background: #FFF;}
+
+/*top menu*/
+
+.M-top .nav-item{ float: left;}
+
+.M-top .nav-title{width: 200px; height: 100%;}
+
+.M-top .nav-title span{ display: block; margin: 0 0 0 10px; height: 60px; line-height: 60px;  color: #FFF; font-size: 20px;}
+
+/**/
+.M-stage .M-content .introduce{width: 100%;}
+
+.M-stage .M-content .introduce .panel-con{margin: 100px auto;; width: 1120px;}
+
+.M-stage .M-content .introduce .panel-con .child-panel{ margin: 0 50px 0 0; float: left; width: 310px; height: 500px; background: #FFF; border-radius: 5px; box-shadow: 1px 3px 4px 1px #aab2bd; overflow: hidden;}
+
+.M-stage .M-content .introduce .panel-con .child-panel .img-con{margin: 20px auto; width: 100px; height: 100px; background: #dedede;}
+
+.M-stage .M-content .introduce .panel-con .child-panel h1{color: #333; font-size: 20px; font-weight: bold; text-align: center; }
+
+.M-stage .M-content .introduce .panel-con .child-panel h2{color: #464646; font-size: 18px; font-weight: bold; text-align: center;}
+
+.M-stage .M-content .introduce .panel-con .child-panel .desc{ margin:auto; margin-top: 50px; width: 80%; height: 150px; color: #747474; text-align: justify; font-size: 14px; overflow: hidden;}
+
+.M-stage .M-content .introduce .panel-con .child-panel .link p{ border: 1px solid #2e9ede; width: 150px; margin: auto; height: 40px; line-height: 40px; border-radius: 6px; color: #23527c; text-align: center; cursor: pointer;}
+
+
+
