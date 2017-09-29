@@ -94,17 +94,7 @@ table th, table td {
 }
 legend, hr { 
     overflow:hidden;
-    position:absolute; 
-    top:0; 
-    left:0;
 }
-
-legend, hr, caption { 
-    visibility:hidden; 
-    font-size:0; 
-    width:0;
-    height:0; 
-    line-height:0;}
 
 
 .clearfix{

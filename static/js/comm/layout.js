@@ -28,8 +28,12 @@ define(function(require, exports, module){
                 "width":cW+'px',
                 "height":cH+'px'
             });
+        },
 
-
+        //设置top menu  状态
+        setTopMenuState:function(className){
+            $('layui-nav-item').removeClass("layui-this");
+            $("."+className).addClass( "layui-this" );
         }
 
 
