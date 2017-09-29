@@ -21,7 +21,9 @@ body{background: #f2f2f2; font-family: "微软雅黑","Microsoft Yahei","Myriad 
 
 .M-stage .M-content .introduce .panel-con .child-panel{ margin: 0 50px 0 0; float: left; width: 310px; height: 500px; background: #FFF; border-radius: 5px; box-shadow: 1px 3px 4px 1px #aab2bd; overflow: hidden;}
 
-.M-stage .M-content .introduce .panel-con .child-panel .img-con{margin: 20px auto; width: 100px; height: 100px; background: #dedede;}
+.M-stage .M-content .introduce .panel-con .child-panel .img-con{margin: 20px auto;  text-align: center;  width: 100px; height: 100px; line-height: 100px; }
+
+.M-stage .M-content .introduce .panel-con .child-panel .img-con i{color: #2e9ede; font-size: 60px; text-align: center;}
 
 .M-stage .M-content .introduce .panel-con .child-panel h1{color: #333; font-size: 20px; font-weight: bold; text-align: center; }
 
