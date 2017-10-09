@@ -4,6 +4,12 @@
 
 .M-stage .M-content .app-panel .app-pre .phone{ margin: auto; width: 360px; height: 640px; background: #FFF; overflow: scroll;}
 
+.M-stage .M-content .app-panel .app-edit{ width: 500px; height: 700px;}
+
+.M-stage .M-content .app-panel .app-edit .tool-bar{display: flex; display: -webkit-flex; flex-direction: row; justify-content: flex-start; width:100%; height: 40px; line-height: 40px; background: #000; font-size: 20px; font-weight: bold; color: #FFF;}
+
+.M-stage .M-content .app-panel .app-edit .tool-bar .tool-item{margin: 0 0 0 10px; width: 40px; height: 40px; cursor: pointer;}
+
 
 
 /*temp*/
