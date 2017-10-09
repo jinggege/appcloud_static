@@ -10,7 +10,7 @@
 /*-temp1000-*/
 .M-stage .M-content .app-panel .app-pre .phone .temp{width: 100%;}
 
-.M-stage .M-content .app-panel .app-pre .phone .temp1000{ background: #ff6811; }
+.M-stage .M-content .app-panel .app-pre .phone .temp1000{display: flex; display: -webkit-flex; flex-direction: column; justify-content: space-between;    background: #ff6811; }
 
 .M-stage .M-content .app-panel .app-pre .phone .temp1000 .head{ display: flex; display: -webkit-flex; justify-content: flex-start; align-items: center;  width: 100%; height: 50px; background: #f46310; border-bottom: 1px solid #ff7729;}
 
@@ -24,7 +24,7 @@
 
 .M-stage .M-content .app-panel .app-pre .phone .temp1000 .main-title{font-size: 30px; color: #FFF; text-align: center;}
 
-.M-stage .M-content .app-panel .app-pre .phone .temp1000 .footer{ position: relative; height: 100px; background: #FFF;}
+.M-stage .M-content .app-panel .app-pre .phone .temp1000 .footer{height: 100px; background: #FFF;}
 
 /*-temp1001-*/
 .M-stage .M-content .app-panel .app-pre .phone .temp1001{ background: #009688; }
