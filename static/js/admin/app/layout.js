@@ -5,6 +5,8 @@ define(function(require, exports, module){
 
     var TPL1000 = require("./tpl1000.js");
 
+    var ToolBar = require("./toolbar.js");
+
     var Layout = function(){ };
 
     Layout.prototype = {
@@ -15,6 +17,8 @@ define(function(require, exports, module){
             this.screenH = $(".phone").height();
             this.eleTemp.css("height",this.screenH+"px");
             this.adepterApp();
+
+            ToolBar.init();
         },
 
         adepterApp:function(){

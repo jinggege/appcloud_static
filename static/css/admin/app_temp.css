@@ -11,6 +11,25 @@
 .M-stage .M-content .app-panel .app-edit .tool-bar .tool-item{margin: 0 0 0 10px; width: 40px; height: 40px; cursor: pointer;}
 
 
+/* work tool */
+body .pop-select-temp{width: 440px; height: 700px; background: #dedede;}
+
+body .pop-select-temp .win-temp{display: flex; display: -webkit-flex; flex-direction: row; justify-content: center; width: 440px; height: 640px;}
+
+body .pop-select-temp .s-t-panel{ height: 100%;}
+
+body .pop-select-temp .s-t-btn{display: flex; display: -webkit-flex; flex-direction: column; justify-content: center;   width: 40px;}
+
+body .pop-select-temp .s-t-btn .select-btn{width: 40px; height: 40px; border-radius: 25px;}
+
+body .pop-select-temp .s-t-panel-m{width: 360px;}
+body .pop-select-temp .s-t-panel-m img{width: 360px; height: 640px; cursor: pointer;}
+
+
+
+
+
+
 
 /*temp*/
 /*-temp1000-*/
@@ -34,3 +53,4 @@
 
 /*-temp1001-*/
 .M-stage .M-content .app-panel .app-pre .phone .temp1001{ background: #009688; }
+
