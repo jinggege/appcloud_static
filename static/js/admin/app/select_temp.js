@@ -6,6 +6,8 @@ define(function(require, exports, module){
 
     var CFG = window.CFG;
 
+    var tempControlPath = CFG.static_domain+"/js/admin/app/"
+
     var SelectTemp = function(){ };
 
         SelectTemp.prototype = {
@@ -68,7 +70,7 @@ define(function(require, exports, module){
                 imgEle.attr("src", imgUrl);
                 imgEle.attr("temp-id",tempIndex);
 
-                //this.getTempHtml(1000);
+                this.getTempHtml(1000);
             },
 
 
@@ -92,12 +94,30 @@ define(function(require, exports, module){
             },
 
             getTempHtml:function(tempId){
-                var url = CFG.app_doman+"/temp/"+tempId;
+                var url = CFG.app_domain+"/temp/"+tempId;
 
                 U.get(url,{},
-                    function(data){},
-                    function(){},
-                    function(){}
+                    function(data){
+                        if(data.code != 0){
+                            layer.msg(data.msg);
+                            return;
+                        }
+
+                        var tempHtml = data.data;
+
+                        var tempConEle = $('.phone');
+                        $('.temp').remove();
+                        tempConEle.append( $(tempHtml) );
+                        var tempControl = require(tempControlPath+"tpl"+tempId+".js");
+                        tempControl.init();
+
+                    },
+                    function(data){ 
+                        //console.log(2,data) 
+                    },
+                    function(data){ 
+                        console.log("=error=") 
+                    }
                 );
 
 

@@ -16,16 +16,9 @@ define(function(require, exports, module){
             this.eleTemp = $(".temp");
             this.screenH = $(".phone").height();
             this.eleTemp.css("height",this.screenH+"px");
-            this.adepterApp();
 
             ToolBar.init();
-        },
-
-        adepterApp:function(){
-            TPL1000.init();
-
         }
-
     };
 
 

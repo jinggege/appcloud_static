@@ -121,7 +121,7 @@ define(function(require, exports, module){
                 success : function(data){
                     if(data.response){
                         data = data.response;
-                        if(data.code != undefined && data.code == 1){
+                        if(data.code != undefined && data.code == 0){
                             success.call(this, data);
                         }else{
                             error && error.call(this, data);
