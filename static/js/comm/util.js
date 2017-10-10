@@ -103,7 +103,7 @@ define(function(require, exports, module){
                 url : url,
                 data : data,
                 dataType : dataType || 'json',
-                contentType: "application/json",
+                //contentType: "application/json",
                 cache : false,
                 timeout : 120000,
                 xhrFields: {

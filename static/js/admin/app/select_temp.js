@@ -2,6 +2,10 @@ define(function(require, exports, module){
 
     var $ = require("JQ");
 
+    var U = require("UTIL");
+
+    var CFG = window.CFG;
+
     var SelectTemp = function(){ };
 
         SelectTemp.prototype = {
@@ -59,10 +63,12 @@ define(function(require, exports, module){
 
             setImg:function(tempIndex){
                 var imgEle = $('#temp-img');
-                var baseUrl = "http://static.appcloud.com/imgs/temp/imgs/temp_";
+                var baseUrl = CFG.static_domain+"/imgs/temp/imgs/temp_";
                 var imgUrl = baseUrl + tempIndex+".png";
                 imgEle.attr("src", imgUrl);
                 imgEle.attr("temp-id",tempIndex);
+
+                //this.getTempHtml(1000);
             },
 
 
@@ -83,6 +89,18 @@ define(function(require, exports, module){
                 html += '</div>';
 
                 return html;
+            },
+
+            getTempHtml:function(tempId){
+                var url = CFG.app_doman+"/temp/"+tempId;
+
+                U.get(url,{},
+                    function(data){},
+                    function(){},
+                    function(){}
+                );
+
+
             }
 
 
