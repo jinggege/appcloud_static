@@ -26,6 +26,15 @@ body .pop-select-temp .s-t-panel-m{width: 360px;}
 
 body .pop-select-temp .s-t-panel-m img{width: 360px; height: 640px; cursor: pointer;}
 
+/* work edit area */
+.M-stage .M-content .app-panel .app-edit{margin: 0 0 0 10px;  border: 1px solid #D2D2D2;}
+
+.M-stage .M-content .app-panel .app-edit .area-edit{width: 100%; height: 660px;}
+
+.M-stage .M-content .app-panel .app-edit .area-edit .area-title{height: 40px; line-height: 40px;}
+
+.M-stage .M-content .app-panel .app-edit .area-edit .area-title fieldset{ padding: 0 0 0 20px; border-top: 1px solid #eee;}
+
 
 /*temp*/
 /*-temp1000-*/
