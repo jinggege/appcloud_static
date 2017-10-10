@@ -6,6 +6,8 @@ define(function(require, exports, module){
 
     var CFG = window.CFG;
 
+    //var T1000 = require("./tpl1000.js");
+
     var tempControlPath = CFG.static_domain+"/js/admin/app/"
 
     var SelectTemp = function(){ };
@@ -57,7 +59,6 @@ define(function(require, exports, module){
 
                 $("#temp-img").on("click",function(){
                     var tempId = $(this).attr("temp-id");
-                    alert(tempId);
 
                 });
 
@@ -108,7 +109,8 @@ define(function(require, exports, module){
                         var tempConEle = $('.phone');
                         $('.temp').remove();
                         tempConEle.append( $(tempHtml) );
-                        var tempControl = require(tempControlPath+"tpl"+tempId+".js");
+
+                        var tempControl = require("./tpl1000.js");
                         tempControl.init();
 
                     },

@@ -3,8 +3,6 @@ define(function(require, exports, module){
 
     var L = require("LAY");
 
-    var TPL1000 = require("./tpl1000.js");
-
     var ToolBar = require("./toolbar.js");
 
     var Layout = function(){ };
