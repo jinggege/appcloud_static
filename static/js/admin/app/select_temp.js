@@ -6,8 +6,6 @@ define(function(require, exports, module){
 
     var CFG = window.CFG;
 
-    //var T1000 = require("./tpl1000.js");
-
     var tempControlPath = CFG.static_domain+"/js/admin/app/"
 
     var SelectTemp = function(){ };
