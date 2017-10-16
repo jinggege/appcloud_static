@@ -24,7 +24,7 @@ define(function(require, exports, module){
 
                     break;
 
-                    case "save-temp" :
+                    case "temp-save" :
                         var tempHtml = $('.temp1000').prop("outerHTML");
                         if( tempHtml == undefined){
                             layer.msg("先请编辑模板!");
@@ -34,6 +34,10 @@ define(function(require, exports, module){
                         console.log(tempHtml);
 
                     break;
+
+                    case "temp-list" :
+
+                    break
                 }
 
             });

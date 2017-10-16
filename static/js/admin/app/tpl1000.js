@@ -34,9 +34,7 @@ define(function(require, exports, module){
                 _this.inTxtEle2.text( _this.outTxtEle2.val() );
                 _this.inTxtEle3.text( _this.outTxtEle3.val() );
 
-                var tempHtml = $('.temp1000').prop("outerHTML");
-
-                console.log(tempHtml);
+                
 
 
             });
