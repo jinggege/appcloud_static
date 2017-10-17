@@ -8,6 +8,8 @@ define(function(require, exports, module){
 
     var EType = require("./event_type.js");
 
+    var UIKey = require("./uikey.js");
+
     var ToolBar = function(){ };
 
     ToolBar.prototype = {
@@ -23,9 +25,7 @@ define(function(require, exports, module){
 
                 switch(btnFlag){
                     case "temp" :
-                        STemp.open();
-
-                        //N.emit(EType.E_SWITCH_TEMP, {name:123}, _this);
+                        N.emit(EType.E_UI_OPEN, UIKey.UI_TEMP_LIST, _this);
                     break;
 
                     case "define" :

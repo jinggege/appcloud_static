@@ -7,6 +7,8 @@ define(function(require, exports, module){
 
     var TempControl = require("./temp_control.js");
 
+    var UIControl = require("./ui_control.js");
+
     var Layout = function(){ };
 
     Layout.prototype = {
@@ -20,6 +22,8 @@ define(function(require, exports, module){
             ToolBar.init();
 
             TempControl.init();
+
+            UIControl.init();
         }
     };
 

@@ -8,7 +8,10 @@
         
         E_SWITCH_TEMP:"e_switch_temp", //切换模板事件
 
-        E_SAVE_TEMP :"e_save_temp"  //保存模板事件
+        E_SAVE_TEMP :"e_save_temp",  //保存模板事件
+
+        E_UI_OPEN :"e_ui_open"  //开启面板
+
         
     }
 
