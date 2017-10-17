@@ -10,26 +10,34 @@ define(function(require, exports, module){
 
     Notify.prototype = {
 
+        init:function(){},
+
         /**
          * 发送事件
          */
-        emit:function(eventType, data){
-            var item = this.getListtener(eventType);
+        emit:function(eventType, data, target){
+            var item = this.getListener(eventType);
             
             if(item == null){
                 alert(eventType+"：事件未注册!");
                 return;
             }
 
-            item.callback.call(data);
+            var emitItem = {
+                eventType:eventType,
+                data:data,
+                target:target
+            }
+
+            item.callback.call(null, emitItem );
         },
 
 
         /**
          * 注册监听事件
          */
-        addListener:function(eventType, data, callback){
-            var item = this.getListtener(eventType);
+        addListener:function(eventType, callback){
+            var item = this.getListener(eventType);
 
             if(item != null){
                 alert(eventType+"：事件重复注册!");
@@ -37,13 +45,13 @@ define(function(require, exports, module){
             }
 
             listenerList.push(
-                {eventType:eventType, data:data, callback:callback}
+                {eventType:eventType, callback:callback}
             );
 
         },
 
 
-        getListtener:function(eventType){
+        getListener:function(eventType){
 
             var len = listenerList.length;
 

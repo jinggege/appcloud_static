@@ -5,6 +5,8 @@ define(function(require, exports, module){
 
     var ToolBar = require("./toolbar.js");
 
+    var TempControl = require("./temp_control.js");
+
     var Layout = function(){ };
 
     Layout.prototype = {
@@ -16,6 +18,8 @@ define(function(require, exports, module){
             this.eleTemp.css("height",this.screenH+"px");
 
             ToolBar.init();
+
+            TempControl.init();
         }
     };
 

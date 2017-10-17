@@ -8,6 +8,7 @@ define(function(require, exports, module ){
 
     var UIControl = function(){ };
 
+
     UIControl.prototype = {
 
         openUI:function(uiKey, data){

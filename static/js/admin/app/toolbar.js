@@ -4,11 +4,17 @@ define(function(require, exports, module){
 
     var STemp = require("./select_temp.js");
 
+    var N = require("./notify.js");
+
+    var EType = require("./event_type.js");
+
     var ToolBar = function(){ };
 
     ToolBar.prototype = {
 
         init:function(){
+
+            var _this = this;
 
             $('.tool-item').on("click",function(){
                 var btnFlag = $(this).attr("tool-name");
@@ -18,6 +24,8 @@ define(function(require, exports, module){
                 switch(btnFlag){
                     case "temp" :
                         STemp.open();
+
+                        //N.emit(EType.E_SWITCH_TEMP, {name:123}, _this);
                     break;
 
                     case "define" :
@@ -25,14 +33,7 @@ define(function(require, exports, module){
                     break;
 
                     case "temp-save" :
-                        var tempHtml = $('.temp1000').prop("outerHTML");
-                        if( tempHtml == undefined){
-                            layer.msg("先请编辑模板!");
-                            return;
-                        }
-                        //todo  save to db
-                        console.log(tempHtml);
-
+                        N.emit(EType.E_SAVE_TEMP, "", _this);
                     break;
 
                     case "temp-list" :
