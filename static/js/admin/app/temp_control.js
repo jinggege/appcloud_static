@@ -23,22 +23,6 @@ define(function(require, exports, module){
 
         switchTemp:function(data){
             console.log(1, data);
-
-            var eventType = data.eventType;
-
-            switch(eventType){
-                case EType.E_SWITCH_TEMP :
-
-                break;
-
-                case EType.E_SAVE_TEMP :
-                    
-
-                break;
-
-
-            }
-
         },
 
 
