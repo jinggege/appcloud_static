@@ -107,18 +107,20 @@ define(function(require, exports, module){
                 cache : false,
                 timeout : 120000,
                 xhrFields: {
-                    withCredentials: true
+                    //withCredentials: true
                 },
                 complete : function(){
                     complete && complete.call(this);
                 },
                 type : type.toUpperCase(),
                 error : function(){
+                    console.log("-error-");
                     error && error.call(this, {
                         code : 99
                     });
                 },
                 success : function(data){
+                    console.log(1,data);
                     if(data.response){
                         data = data.response;
                         if(data.code != undefined && data.code == 0){
