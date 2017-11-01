@@ -21,6 +21,8 @@ define(function(require, exports, module){
 
             this.bindEvent();
 
+            this.getTitleList();
+
         },
 
         bindEvent:function(){
@@ -37,8 +39,35 @@ define(function(require, exports, module){
                 );
             });
 
+        },
 
+        getTitleList:function(){
+            var _this = this;
+            var url = "http://api.appcloud.com/nb/gettitle";
+            U.get(url,{}, function(data){
+                    console.log(data);
+                    var titleList = data.data;
+                    var item = null;
+                    var html = '<div>';
+                    for(var i=0; i<titleList.length; i++){
+                        item = titleList[i];
+                        html += '<div>';
+                        html += item.title_id+"-----"+item.title;
+                        html += '</div>';
+                    }
+                    html += '</div>';
+
+                    _this.eleTitleList.append( $(html) );
+
+
+                    
+                },
+                function(data){ },
+                function(data){  }
+            );
         }
+
+
 
 
     }
